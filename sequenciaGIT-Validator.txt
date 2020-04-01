@@ -1,0 +1,16 @@
+git init
+git config --global user.name "HMSConsulting"
+git config --global user.email "projetos@hmsconsulting.com.br"
+git remote add originValidator https://github.com/HMSConsulting/Projeto-Agrosolo-API-Send-Email.git
+git remote set-url https://github.com/HMSConsulting/Projeto-Agrosolo-API-Send-Email.git
+git add .
+git commit -m ""
+git pull originValidator master
+git push -u originValidator master 
+
+----------------
+
+log heroku
+
+command:
+heroku logs --tail --app=validatoragrosolo
